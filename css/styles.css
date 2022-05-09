@@ -1,0 +1,12 @@
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+/* label {
+    margin-right: ;
+} */
+.container{
+    padding: 15rem;
+}
