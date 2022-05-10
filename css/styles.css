@@ -1,12 +1,96 @@
-.form-group {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 
-}
-/* label {
-    margin-right: ;
-} */
-.container{
-    padding: 15rem;
-}
+* {
+    box-sizing: border-box;
+  }
+
+
+  /* SE BUSCO EL ESTILO PARA EL BOTON 3D */
+  .btn {
+    padding: .6rem 1rem;
+    border: 1px solid #995309;
+    border-radius: 4px;
+    background-color: #d9750b;
+    color: #fff;
+  
+    font-size: 1.5rem;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+      0 1px 3px rgba(0,0,0,.2);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f90),to(#e76a00));
+    background-image: linear-gradient(#f90 10%,#e76a00 100%);
+  }
+  
+  .btn:hover, .btn-3d:focus {
+    background-color: #e0811b;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+    background-image: linear-gradient(#f0a100 10%,#f70 100%);
+  }
+  
+  .btn:active {
+    background-color: #cf6a00;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) inset;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+    background-image: linear-gradient(#f0a100 10%,#f70 100%);
+  }
+  /* ------------- */
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  textarea{
+        background-image:url(../image/nube.jpg);
+    }
+
+  input[type=text]:hover {
+        background-color: #ccc;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 800px;
+    
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  .col-75-list-small{
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+  }
+
+  .col-75-list-large{
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
